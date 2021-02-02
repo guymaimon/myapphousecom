@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">House Committee</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_register">Register</string>
+    <string name="retype_password">Re Enter Your Password</string>
+    <string name="full_name">full name</string>
+    <string name="building_number">building number</string>
+    <string name="apartment_number">apartment number</string>
+    <string name="tenant_or_committee">Committee</string>
+    <string name="seniority">seniority</string>
+    <string name="num_of_rooms">num of rooms</string>
+    <string name="not_registered_yet">Register for a new account</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello BP blank fragment</string>
+    <string name="title_activity_tenant__payments">Tenant Payments</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="lbl_forgot_password" />
+    <string name="forgot_password_msg" />
+    <string name="btn_reset_password" />
+    <string name="btn_back" />
+    <string name="title_activity_resetpassword">resetpassword</string>
+</resources>
