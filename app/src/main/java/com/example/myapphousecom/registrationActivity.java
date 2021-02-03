@@ -1,5 +1,6 @@
 package com.example.myapphousecom;
 
+
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -41,7 +42,6 @@ public class registrationActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private CheckBox terms;
     private EditText email, fullName, apartmentNumber, buildingNumber, password, password_again,seniority,numOfRooms;
-    private final int PaymentPerRoom = 200;
     private Switch aSwitch;
     private boolean isCommittee = true;
 
@@ -122,7 +122,7 @@ public class registrationActivity extends AppCompatActivity {
             seniority.setError("You must enter seniority");
         }
         else if (!isCommittee && TextUtils.isEmpty(numOfRooms.getText())){
-            numOfRooms.setError("You must enter seniority");
+            numOfRooms.setError("You must enter number of rooms!");
         }
         else if (!terms.isChecked()){
             terms.setError("You must read and accept the terms");
@@ -144,10 +144,11 @@ public class registrationActivity extends AppCompatActivity {
             useri.put("role", isCommittee ? "Committee" : "Tenant");
             useri.put("apartmentNumber", apartmentNumber.getText().toString());
             useri.put("buildingNumber", buildingNumber.getText().toString());
+            int paymentPerRoom = 200;
             if(isCommittee)
                 useri.put("seniority", seniority.getText().toString());
             else
-                useri.put("monthlyPayment", PaymentPerRoom * Integer.parseInt(numOfRooms.getText().toString()));
+                useri.put("monthlyPayment", paymentPerRoom * Integer.parseInt(numOfRooms.getText().toString()));
 // Add a new document with a generated ID
 
             mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
